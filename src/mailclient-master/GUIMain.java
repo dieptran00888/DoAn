@@ -320,7 +320,6 @@ public class GUIMain {
             // close the editableAccount frame
             frameEditable.setVisible(false);
 
-            System.out.println(userInfos[0]);
             GUIKontoInformation test = new GUIKontoInformation();
             test.emailadressinput.setText(userInfos[0]);
             test.usernameinput.setText(userInfos[1]);

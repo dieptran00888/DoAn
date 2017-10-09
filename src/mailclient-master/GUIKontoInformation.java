@@ -41,7 +41,7 @@ public class GUIKontoInformation extends GUIMain implements ActionListener {
 
         kontoInformationFame.setSize(500, 450);
         emailadress = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        emailadress.add(new JLabel("email Adresse"));
+        emailadress.add(new JLabel("email Address"));
         emailadress.add(emailadressinput);
 
         username = new JPanel(new FlowLayout(FlowLayout.LEFT));
@@ -49,27 +49,27 @@ public class GUIKontoInformation extends GUIMain implements ActionListener {
         username.add(usernameinput);
 
         uservalidationname = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        uservalidationname.add(new JLabel("Benutzererkennung:"));
+        uservalidationname.add(new JLabel("UserId:"));
         uservalidationname.add(uservalidationnameinput);
 
         userpass = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        save = new JCheckBox("Passwort speichern");
+        save = new JCheckBox("Remember password");
         save.addItemListener(new CheckBoxListener());
 
-        userpass.add(new JLabel("Passwort:"));
+        userpass.add(new JLabel("Password:"));
         userpass.add(userpassinput);
         userpass.add(save);
 
         postentrance = new JPanel(new FlowLayout(FlowLayout.LEFT));
         portin = new JTextField(6);
         portin.setText("110");
-        postentrance.add(new JLabel("Posteingang:"));
+        postentrance.add(new JLabel("Inbox:"));
         postentrance.add(postentranceinput);
         postentrance.add(new JLabel("Port:"));
         postentrance.add(portin);
 
         postexit = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        postexit.add(new JLabel("Postausgang:"));
+        postexit.add(new JLabel("Outbox:"));
         postex = new JTextField(6);
         postex.setText("10");
         postexit.add(postexitinput);
@@ -80,14 +80,14 @@ public class GUIKontoInformation extends GUIMain implements ActionListener {
         check = new JPanel(new FlowLayout(FlowLayout.CENTER));
         ok = new JButton("Ok");
         ok.addActionListener(this);
-        abort = new JButton("Abbrechen");
+        abort = new JButton("Cancel");
         abort.addActionListener(this);
         check.add(ok);
         check.add(abort);
 
         // create a great panel complete which contain all other panels
         complete = new JPanel(new GridLayout(8, 1));
-        complete.add(new JLabel("Benutzerdaten eingeben: "));
+        complete.add(new JLabel("Enter user data: "));
         complete.add(emailadress);
         complete.add(username);
         complete.add(uservalidationname);
